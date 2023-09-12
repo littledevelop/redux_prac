@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import {BrowserRouter,Routes,Route, Link} from 'react-router-dom';
 import Home from './Component/Home';
 import Userlisting from './Component/Userlisting';
 import Adduser from './Component/Adduser';
@@ -9,7 +9,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <div className="header"></div>
+      <div className="header">
+        <Link to={'/'}>Home</Link> &nbsp;
+        <Link to={'/user'}>User</Link>
+
+      </div>
         <Routes>
           <Route path='/' Component={Home}></Route>
           <Route path='/user' Component={Userlisting}></Route>
