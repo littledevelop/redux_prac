@@ -5,8 +5,12 @@ import Userlisting from './Component/Userlisting';
 import Adduser from './Component/Adduser';
 import Updateuser from './Component/Updateuser';
 import { ToastContainer } from 'react-toastify';
+import {Provider} from 'react-redux';
+import Store from './Redux/Store';
 function App() {
   return (
+<Provider store={Store}>
+
     <div className="App">
       <BrowserRouter>
       <div className="header">
@@ -21,8 +25,9 @@ function App() {
           <Route path='/user/edit/:code' Component={Updateuser}></Route>
         </Routes>
       </BrowserRouter>
-      <ToastContainer/>
+      <ToastContainer className="toast-position" position='bottom-right'/>
     </div>
+</Provider>  
   );
 }
 

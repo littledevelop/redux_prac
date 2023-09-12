@@ -1,18 +1,46 @@
 {
-    "users": [{
-            "id": 1,
-            "name": "Admin User",
-            "role": "admin",
-            "email": "admin@in.com",
-            "phone": "9898989898"
-        },
-        {
-            "id": 2,
-            "name": "Admin User",
-            "role": "admin",
-            "email": "admin@in.com",
-            "phone": "9898989898"
-        }
-    ]
-
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "role": "admin",
+      "email": "admin@in.com",
+      "phone": "9898989898"
+    },
+    {
+      "id": 2,
+      "name": "User",
+      "role": "user",
+      "email": "user@in.com",
+      "phone": "7878789622"
+    },
+    {
+      "name": "Hemant D. Rana",
+      "email": "latarana4u@gmail.com",
+      "phone": "09875812554",
+      "role": "staff",
+      "id": 3
+    },
+    {
+      "name": "Hemant D. Rana",
+      "email": "latarana4u@gmail.com",
+      "phone": "09875812554",
+      "role": "staff",
+      "id": 4
+    },
+    {
+      "name": "Zeel",
+      "email": "Zeel@gmail.com",
+      "phone": "08585858585",
+      "role": "staff",
+      "id": 5
+    },
+    {
+      "name": "kiran",
+      "email": "kiran@yahoo.in",
+      "phone": "09898989898",
+      "role": "admin",
+      "id": 6
+    }
+  ]
 }
