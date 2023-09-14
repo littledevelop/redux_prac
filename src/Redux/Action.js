@@ -1,5 +1,5 @@
 import { toast } from "react-toastify"
-import { ADD_USER, DELETE_USER, FAIL_REQUEST, GET_USER_LIST, MAKE_REQUEST, UPDATE_USER } from "./ActionType"
+import { ADD_USER, DELETE_USER, FAIL_REQUEST, GET_USER_LIST, GET_USER_OBJ, MAKE_REQUEST, UPDATE_USER } from "./ActionType"
 import axios from "axios"
 export const makeRequest=()=>{
     return{
@@ -37,6 +37,14 @@ export const addUser=(data)=>{
 export const updateUser=()=>{
     return{
         type:UPDATE_USER
+    }
+}
+
+export const getUserObj=(data)=>{
+    return{
+        type:GET_USER_OBJ,
+        payload:data
+
     }
 }
 
@@ -81,11 +89,25 @@ export const functionAddUser=(data)=>{
 export const functionUpdateUser=(data,code)=>{
 return(dispatch)=>{
     dispatch(makeRequest());
-    axios.put('http://localhost:8000/user/'+code,data).then(res=>{
+    axios.put('http://localhost:8000/users/'+code,data).then(res=>{
         dispatch(updateUser());
         toast.success('Update User Successfully');
     }).catch(err=>{
         dispatch(failRequest(err.message))
     })
 }
+}
+
+export const fetchUserObj=(code)=>{
+    return (dispatch)=>{
+        dispatch(makeRequest());
+        console.log(code)
+        axios.get('http://localhost:8000/users/'+code).then(res=>{
+            console.log(res)
+            const userlist = res.data;
+            dispatch(getUserObj(userlist));
+        }).catch(err=>{
+            dispatch(failRequest(err.message))
+        })
+    }
 }

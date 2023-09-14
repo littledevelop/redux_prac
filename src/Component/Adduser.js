@@ -79,7 +79,7 @@ const Adduser = () => {
           </div>
           <div className="card-footer" style={{ textAlign: "left" }}>
             <button className="btn btn-primary" type="submit">Submit</button>
-            <Link className="btn btn-cancel">Back</Link>
+            <Link className="btn btn-cancel" to={'/user'}>Back</Link>
           </div>
         </div>
       </form>
