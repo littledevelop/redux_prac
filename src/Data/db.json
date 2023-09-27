@@ -1,53 +1,53 @@
 {
-    "users": [{
-            "id": 1,
-            "name": "Admin User",
-            "role": "admin",
-            "email": "admin@in.com",
-            "phone": "9898989898"
-        },
-        {
-            "id": 2,
-            "name": "User",
-            "role": "user",
-            "email": "user@in.com",
-            "phone": "7878789622"
-        },
-        {
-            "id": 3,
-            "name": "Hemant D. Rana",
-            "email": "latarana4u@gmail.com",
-            "phone": "09875812554",
-            "role": "staff"
-        },
-        {
-            "id": 4,
-            "name": "Hemant D. Rana",
-            "email": "latarana4u@gmail.com",
-            "phone": "09875812554",
-            "role": "staff"
-        },
-        {
-            "id": 5,
-            "name": "Zeel",
-            "email": "Zeel@gmail.com",
-            "phone": "08585858585",
-            "role": "staff"
-        },
-
-        {
-            "id": 6,
-            "name": "kiran",
-            "email": "kiran@yahoo.in",
-            "phone": "09898989898",
-            "role": "admin"
-        },
-        {
-            "id": 7,
-            "name": "CHAPADIA NIKUNJ CHAPADIA",
-            "email": "nikunj12@yahoo.com",
-            "phone": "09909901077",
-            "role": "user"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "role": "admin",
+      "email": "admin@in.com",
+      "phone": "9898989898"
+    },
+    {
+      "id": 2,
+      "name": "User",
+      "role": "user",
+      "email": "user@in.com",
+      "phone": "7878789622"
+    },
+    {
+      "id": 3,
+      "name": "Hemant D. Rana",
+      "email": "latarana4u@gmail.com",
+      "phone": "09875812554",
+      "role": "staff"
+    },
+    {
+      "id": 4,
+      "name": "Hemant D. Rana",
+      "email": "latarana4u@gmail.com",
+      "phone": "09875812554",
+      "role": "staff"
+    },
+    {
+      "id": 5,
+      "name": "Zeel",
+      "email": "Zeel@gmail.com",
+      "phone": "08585858585",
+      "role": "staff"
+    },
+    {
+      "id": 6,
+      "name": "kiran",
+      "email": "kiran@yahoo.in",
+      "phone": "09898989898",
+      "role": "admin"
+    },
+    {
+      "name": "jinal sethi",
+      "email": "jinal@gmail.com",
+      "phone": "08755212555",
+      "role": "admin",
+      "id": 8
+    }
+  ]
 }

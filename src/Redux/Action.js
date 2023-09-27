@@ -54,7 +54,7 @@ export const fetchUserList=()=>{
         setTimeout(()=>{
 
         },2000);
-      axios.get('http://localhost:8000/users').then(res=>{
+      axios.get('http://localhost:8002/users').then(res=>{
             const userlist = res.data;
             dispatch(getUserList(userlist));
         }).catch(err=>{
@@ -66,7 +66,7 @@ export const fetchUserList=()=>{
 export const removeUser=(code)=>{
     return (dispatch)=>{
         dispatch(makeRequest());
-        axios.delete('http://localhost:8000/users/'+code).then(res=>{
+        axios.delete('http://localhost:8002/users/'+code).then(res=>{
             dispatch(deleteUser());
         }).catch(err=>{
             dispatch(failRequest(err.message))
@@ -77,7 +77,7 @@ export const removeUser=(code)=>{
 export const functionAddUser=(data)=>{
     return(dispatch)=>{
         dispatch(makeRequest());
-        axios.post('http://localhost:8000/users',data).then(res=>{
+        axios.post('http://localhost:8002/users',data).then(res=>{
             dispatch(addUser());
             toast.success('User Added Successfully');
         }).catch(err=>{
@@ -89,7 +89,7 @@ export const functionAddUser=(data)=>{
 export const functionUpdateUser=(data,code)=>{
 return(dispatch)=>{
     dispatch(makeRequest());
-    axios.put('http://localhost:8000/users/'+code,data).then(res=>{
+    axios.put('http://localhost:8002/users/'+code,data).then(res=>{
         dispatch(updateUser());
         toast.success('Update User Successfully');
     }).catch(err=>{
@@ -102,7 +102,7 @@ export const fetchUserObj=(code)=>{
     return (dispatch)=>{
         dispatch(makeRequest());
         console.log(code)
-        axios.get('http://localhost:8000/users/'+code).then(res=>{
+        axios.get('http://localhost:8002/users/'+code).then(res=>{
             console.log(res)
             const userlist = res.data;
             dispatch(getUserObj(userlist));
